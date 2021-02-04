@@ -63,8 +63,17 @@
    <script>
 
        var n1 = new Negociacao(new Date(), 5, 200)
-       var volume = n1.obtemVolome()
-       console.log(volume)
+       console.log(n1.date)
+    
+       n1.date.setDate(5)
+       
+       console.log(n1.date)
+
+       
+    //    console.log(n1.valor)
+    //    console.log(n1.quantidade)
+    //    console.log(n1.date)
+    //    console.log(n1.volome)
 
        
 
