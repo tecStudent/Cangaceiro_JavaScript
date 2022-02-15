@@ -61,12 +61,12 @@
     <script src="app/domain/negociacao/Negociacao.js"></script>
     <script>
 
-        let n1 = new Negociacao(new Date(),20,15)
-        console.log(n1.data)
-        n1._quantidade = 60
-        console.log(n1.quantidade)
-        console.log(n1.valor)
-        console.log(n1.volume)
+        let hoje = new Date();
+        let n1 = new Negociacao(hoje, 5, 700);
+        console.log(n1.data);
+        hoje.setDate(11);
+        console.log(n1.data);
+
 
 
     </script>
